@@ -11,3 +11,4 @@ to check file list - ls
 to make other folder repo - git remote add origin [link to rapo]
 to check weather it is repo - git remote -v
 to see the branch - git branch
+to change the name of branch - git branch -m [name] (Mostly name should be main)
