@@ -8,3 +8,6 @@ to make changes in github - git push origin main
 to make a folder git folder - git init
 to check hidden files - Get-ChildItem -Force
 to check file list - ls
+to make other folder repo - git remote add origin [link to rapo]
+to check weather it is repo - git remote -v
+to see the branch - git branch
