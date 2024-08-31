@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000000;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative; /* Ensure positioning for pseudo-element */
+    overflow: auto; /* Prevent scrollbars if background image extends beyond viewport */
+
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpaperaccess.com/full/624111.jpg'); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.6; /* Adjust opacity here */
+    z-index: -1; /* Place behind the content */
+}
+header {
+    background-color: #007bff; /* Blue color */
+    padding: 1rem 0;
+    width: calc(100% + 66px); /* Adjusted to account for negative margins */
+    margin-left: -33px;
+    margin-top: -33px;
+    height: calc(100% + 66px);
+    /* main div img{
+        height: 200px;
+        width: 220px;
+        margin-top: -120px;
+        margin-left: 80%;
+    position:relative;
+    animation: upDown 3s ease-in-out infinite;
+} */
+}
+nav{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    height: 27px;
+    position: relative; /* Ensure positioning of nested elements */
+}
+nav i img{
+    height: 83px;
+    width: 81px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -8px;
+}
+nav span{  
+    margin-left: 59px;
+    position: absolute;
+    margin-top: -2px;
+    font-size: x-large;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navButton{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+main {
+    position: relative; /* Ensure positioning relative to pseudo-element */
+}
+
+
+main div{
+    margin-top: 45px;
+    /* margin-left: 12px; */
+    /* display: flex; */
+    position: relative;
+    
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: calc(100% + 84px); /* Adjusted to account for negative margins */
+    bottom: 0;
+    margin-left: -42px;
+}
+
+.cardContainer{
+    display: flex;
+    padding: 12px;   
+}
+.card{
+    margin: 0 10px;   
+}
+
+
+
+
+@keyframes upDown {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 0;
+    }
+}
