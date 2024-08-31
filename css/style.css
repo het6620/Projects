@@ -26,12 +26,16 @@ body::before {
     z-index: -1; /* Place behind the content */
 }
 header {
+    position: sticky;
+    top:0;
+    left: 0;
     background-color: #007bff; /* Blue color */
     padding: 1rem 0;
     width: calc(100% + 66px); /* Adjusted to account for negative margins */
-    margin-left: -33px;
+     margin-left: -33px;
     margin-top: -33px;
-    height: calc(100% + 66px);
+    height: calc(100% + 66px); 
+    z-index: 1000;
     /* main div img{
         height: 200px;
         width: 220px;
@@ -49,10 +53,15 @@ nav{
     position: relative; /* Ensure positioning of nested elements */
 }
 nav i img{
-    height: 58px;
+    /* height: 83px;
+    width: 81px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -8px; */
+    height: 59px;
     width: 64px;
     position: absolute;
-    margin-top: -15px;
+    margin-top: -16px;
     margin-left: -8px;
 
 }
@@ -95,13 +104,50 @@ main {
     position: relative; /* Ensure positioning relative to pseudo-element */
 }
 
-
+.carousel-control-next{
+    top : 6rem !important;
+    right: 39rem !important; 
+}
+.carousel-control-prev
+{
+    top : 6rem !important;
+    left: -78px !important;
+}
+#carouselExample{
+    margin-top: -80px;
+}
 main div{
     margin-top: 45px;
     /* margin-left: 12px; */
     /* display: flex; */
     position: relative;
     
+}
+
+.cardContainer{
+    display: flex;
+    margin-top:-12px ;
+    padding: 12px;   
+    margin-left: -20px;
+}
+.card{
+    margin: 0 10px;   
+}
+.card:hover{
+    border: solid blue 1px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    margin: -7px;
+}
+.card-img, .card-img-top {
+    width: 255px;
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    height: 135px;
 }
 
 section {
@@ -117,23 +163,25 @@ footer {
     width: calc(100% + 84px); /* Adjusted to account for negative margins */
     bottom: 0;
     margin-left: -42px;
-}
-
-.cardContainer{
-    display: flex;
-    padding: 12px;   
-}
-.card{
-    margin: 0 10px;   
+    height: 42px;
 }
 
 
+
+
+.hidden {
+    opacity: 0.6;
+    transition: opacity 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
 
 
 @keyframes upDown {
-    0% {
-        top: 0;
-    }
+  
     50% {
         top: 20px;
     }

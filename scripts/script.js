@@ -15,3 +15,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('scroll',()=>{
+    let about = document.getElementById('services')
+    setTimeout(() => {
+        about.classList.remove('hidden');
+        about.classList.add('visible');
+    }, 2000);
+})
+document.addEventListener('scroll',()=>{
+    let about = document.getElementById('about')
+    setTimeout(() => {
+        about.classList.remove('hidden');
+        about.classList.add('visible');
+    }, 3000);
+})
+document.addEventListener('scroll',()=>{
+    let about = document.getElementById('contact')
+    setTimeout(() => {
+        about.classList.remove('hidden');
+        about.classList.add('visible');
+    }, 4000);
+})
