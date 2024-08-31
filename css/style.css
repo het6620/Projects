@@ -49,11 +49,6 @@ nav{
     position: relative; /* Ensure positioning of nested elements */
 }
 nav i img{
-    /* height: 83px;
-    width: 81px;
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -8px; */
     height: 58px;
     width: 64px;
     position: absolute;
