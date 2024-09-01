@@ -2,8 +2,9 @@ body,
 html {
     margin: 0;
     padding: 0;
-    overflow: visible;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    
+    /* Prevent horizontal scrolling */
 }
 
 body {
@@ -27,49 +28,37 @@ body::before {
     width: 100%;
     height: 100%;
     background-image: url('https://wallpaperaccess.com/full/624111.jpg');
+    /* Replace with your image URL */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.4;
+    /* Adjust opacity here */
     z-index: -1;
+    /* Place behind the content */
 }
 
-/* header {
-    position: sticky !important;
+header {
+    position: sticky;
     top: -32px;
     left: -22px;
     background-color: #007bff;
+    /* Blue color */
     padding: 1rem 0;
     width: calc(100% + 66px);
+    /* Adjusted to account for negative margins */
     margin-left: -30px;
     margin-top: -40px;
     height: calc(100% + 66px);
     z-index: 1000;
-
-   
-    
-   
+    /* main div img{
+        height: 200px;
+        width: 220px;
+        margin-top: -120px;
+        margin-left: 80%;
+    position:relative;
+    animation: upDown 3s ease-in-out infinite;
 } */
-/* header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: #007bff;
-    padding: 1rem 0;
-    width: 100%;
-    z-index: 1000;
-} */
-
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: #007bff; /* Blue color */
-    padding: 1rem 0;
-    width: 100%;
-    z-index: 1000;
-    height: auto; /* Ensure there's space */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds shadow to highlight */
 }
 
 nav {
@@ -82,6 +71,11 @@ nav {
 }
 
 nav i img {
+    /* height: 83px;
+    width: 81px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -8px; */
     height: 59px;
     width: 64px;
     position: absolute;
@@ -132,6 +126,27 @@ main {
     /* Ensure positioning relative to pseudo-element */
 }
 
+/* #home{
+    
+    animation: downToUpHome 3s ease forwards ;
+} */
+/* #home,
+#services,
+#about,
+#contact {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(242, 243, 245, 0.3);
+    color: #000000;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: auto;
+    margin-left: -31px;
+    width: 110%;
+} */
 
 
 .carousel-item {
@@ -235,17 +250,14 @@ section {
 .txtForm{
     color: white !important;
 }
-.formClass{
+.contactDiv{
     position: relative;
     width: 50%;
     height: 100%;
     margin-left: 22rem;
-    background-color: #d1dfe9 !important;
+    background-color: white !important;
     color: black !important;
     font-weight: bold !important;
-    border-radius: 5px;
-    padding: 1px 25px;
-    padding-bottom: 15px;
 }
 footer {
     background-color: #000000;
@@ -259,7 +271,9 @@ footer {
     margin-left: -42px;
     height: 42px;
 }
-
+.contactDiv input{
+    background-color: rgba(97, 97, 239, 0.749);
+}
 
 
 
