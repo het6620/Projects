@@ -1,16 +1,24 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: rgba(233, 240, 255, 0.4);
     color: #000000;
     padding: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative; /* Ensure positioning for pseudo-element */
-    overflow: auto; /* Prevent scrollbars if background image extends beyond viewport */
-
+    position: relative;
+    overflow: auto;
 }
+
 body::before {
     content: "";
     position: absolute;
@@ -18,23 +26,29 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://wallpaperaccess.com/full/624111.jpg'); /* Replace with your image URL */
+    background-image: url('https://wallpaperaccess.com/full/624111.jpg');
+    /* Replace with your image URL */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0.6; /* Adjust opacity here */
-    z-index: -1; /* Place behind the content */
+    opacity: 0.5;
+    /* Adjust opacity here */
+    z-index: -1;
+    /* Place behind the content */
 }
+
 header {
     position: sticky;
-    top:0;
-    left: 0;
-    background-color: #007bff; /* Blue color */
+    top: -32px;
+    left: -22px;
+    background-color: #007bff;
+    /* Blue color */
     padding: 1rem 0;
-    width: calc(100% + 66px); /* Adjusted to account for negative margins */
-     margin-left: -33px;
-    margin-top: -33px;
-    height: calc(100% + 66px); 
+    width: calc(100% + 66px);
+    /* Adjusted to account for negative margins */
+    margin-left: -30px;
+    margin-top: -40px;
+    height: calc(100% + 66px);
     z-index: 1000;
     /* main div img{
         height: 200px;
@@ -45,14 +59,17 @@ header {
     animation: upDown 3s ease-in-out infinite;
 } */
 }
-nav{
+
+nav {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     height: 27px;
-    position: relative; /* Ensure positioning of nested elements */
+    position: relative;
+    /* Ensure positioning of nested elements */
 }
-nav i img{
+
+nav i img {
     /* height: 83px;
     width: 81px;
     position: absolute;
@@ -65,19 +82,21 @@ nav i img{
     margin-left: -8px;
 
 }
-nav span{  
+
+nav span {
     margin-left: 59px;
     position: absolute;
     margin-top: -2px;
     font-size: x-large;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: end;
-    
+
 }
 
 nav ul li {
@@ -86,7 +105,7 @@ nav ul li {
 
 nav ul li a {
     color: #000000;
-    text-decoration:none;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -94,47 +113,77 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.navButton{
+.navButton {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     text-decoration: underline;
 }
+
 main {
-    position: relative; /* Ensure positioning relative to pseudo-element */
+    position: relative;
+    /* Ensure positioning relative to pseudo-element */
 }
 
-.carousel-control-next{
-    top : 6rem !important;
-    right: 39rem !important; 
+/* #home,
+#services,
+#about,
+#contact {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(242, 243, 245, 0.3);
+    color: #000000;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: auto;
+    margin-left: -31px;
+    width: 110%;
+} */
+
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
 }
-.carousel-control-prev
-{
-    top : 6rem !important;
-    left: -78px !important;
+
+.carousel-control-next {
+    top: 6rem !important;
+    right: 40rem !important;
 }
-#carouselExample{
+
+.carousel-control-prev {
+    top: 6rem !important;
+    left: -100px !important;
+}
+
+#carouselExample {
     margin-top: -80px;
 }
-main div{
+
+main div {
     margin-top: 45px;
     /* margin-left: 12px; */
     /* display: flex; */
     position: relative;
-    
+
 }
 
-.cardContainer{
+.cardContainer {
     display: flex;
-    margin-top:-12px ;
-    padding: 12px;   
+    margin-top: -12px;
+    padding: 12px;
     margin-left: -20px;
+    width: 96%;
 }
-.card{
-    margin: 0 10px;   
+
+.card {
+    margin: 0 10px;
 }
-.card:hover{
-    border: solid blue 1px;
+
+.card:hover {
+    background-color: #b7d0ed;
 }
 
 .card-body {
@@ -143,7 +192,9 @@ main div{
     color: var(--bs-card-color);
     margin: -7px;
 }
-.card-img, .card-img-top {
+
+.card-img,
+.card-img-top {
     width: 255px;
     border-top-left-radius: var(--bs-card-inner-border-radius);
     border-top-right-radius: var(--bs-card-inner-border-radius);
@@ -160,7 +211,8 @@ footer {
     padding: 1rem;
     text-align: center;
     position: fixed;
-    width: calc(100% + 84px); /* Adjusted to account for negative margins */
+    width: calc(100% + 84px);
+    /* Adjusted to account for negative margins */
     bottom: 0;
     margin-left: -42px;
     height: 42px;
@@ -181,10 +233,11 @@ footer {
 
 
 @keyframes upDown {
-  
+
     50% {
         top: 20px;
     }
+
     100% {
         top: 0;
     }

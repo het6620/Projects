@@ -20,7 +20,7 @@ document.addEventListener('scroll',()=>{
     setTimeout(() => {
         about.classList.remove('hidden');
         about.classList.add('visible');
-    }, 2000);
+    }, 1500);
 })
 document.addEventListener('scroll',()=>{
     let about = document.getElementById('about')
