@@ -1,353 +1,80 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    
-    /* Prevent horizontal scrolling */
+Iphone SE 
+    nav span {
+        margin-left: 59px;
+        position: absolute;
+        margin-top: -2px;
+        font-size: large;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        font-size: smaller;
+    }
+
+    nav ul li {
+        margin: 0 2px;
+    }
+    #imgGraphics {
+        height: 11rem;
+        width: 11rem;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        left: 8rem;
+        bottom: 19rem;
+        margin: 0 auto;
+        animation: upComing 2.5s ease infinite;
+    }
+
+    .animate.active {
+        opacity: 1;
+        width: 13rem;
+    }
+    #carouselExample {
+        position: relative;
+        margin-top: -16rem;
+    } 
+
+    .card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    margin-bottom: 13px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    padding: 2rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;    
-    overflow: auto;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+#about {
+    position: relative;
     width: 100%;
-    height: 100%;
-    background-image: url('https://wallpaperaccess.com/full/624111.jpg');
-    /* Replace with your image URL */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.4;
-    /* Adjust opacity here */
-    z-index: -1;
-    /* Place behind the content */
-}
-
-header {
-    position: sticky;
-    top: -32px;
-    left: -22px;
-    background-color: #007bff;
-    /* Blue color */
-    padding: 1rem 0;
-    width: calc(100% + 66px);
-    /* Adjusted to account for negative margins */
-    margin-left: -30px;
-    margin-top: -40px;
-    height: calc(100% + 66px);
-    z-index: 1000;
-    /* main div img{
-        height: 200px;
-        width: 220px;
-        margin-top: -120px;
-        margin-left: 80%;
-    position:relative;
-    animation: upDown 3s ease-in-out infinite;
-} */
-}
-
-nav {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    height: 27px;
-    position: relative;
-    /* Ensure positioning of nested elements */
-}
-
-nav i img {
-    /* height: 83px;
-    width: 81px;
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -8px; */
-    height: 59px;
-    width: 64px;
-    position: absolute;
-    margin-top: -16px;
-    margin-left: -8px;
-
-}
-
-nav span {
-    margin-left: 59px;
-    position: absolute;
-    margin-top: -2px;
-    font-size: x-large;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: end;
-
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.navButton {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-main {
-    position: relative;
-    /* Ensure positioning relative to pseudo-element */
-}
-
-/* #home{
-    
-    animation: downToUpHome 3s ease forwards ;
-} */
-/* #home,
-#services,
-#about,
-#contact {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgba(242, 243, 245, 0.3);
-    color: #000000;
-    padding: 2rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: auto;
-    margin-left: -31px;
-    width: 110%;
-} */
-
-
-.carousel-item {
-    transition: transform 3s ease-in-out;
-}
-
-.carousel-control-next, .carousel-control-prev {
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-}
-
-.carousel-control-next {
-    right: 38rem !important;
-}
-
-.carousel-control-prev {
-    left: -97px !important;
-}
-#carouselExample {
-    position: relative;
-    margin-top: -33rem;
-}
-#imgGraphics{
-    height: 30rem;
-    width: 30rem;
-    position: relative;
-    overflow: hidden;
-    display: block;
-    left: 35rem;
-    bottom: 20rem;
-    margin: 0 auto; /* Center horizontally */
-    /* animation: lightPulse 3s    ease-in-out infinite; */
-    animation: upComing 2.5s ease infinite;
-
-}
-
-main div {
-    margin-top: 45px;
-    /* margin-left: 12px; */
-    /* display: flex; */
-    position: relative;
-
-}
-
-.cardContainer {
-    display: flex;
-    margin-top: -12px;
-    padding: 12px;
-    margin-left: -20px;
-    width: 96%;
-}
-
-.card {
-    margin: 0 10px;
-}
-
-.card:hover {
-    background-color: #b7d0ed;
-}
-
-.card-body {
-    flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color);
-    margin: -7px;
-}
-
-.card-img,
-.card-img-top {
-    width: 255px;
-    border-top-left-radius: var(--bs-card-inner-border-radius);
-    border-top-right-radius: var(--bs-card-inner-border-radius);
-    height: 135px;
-}
-
-section {
-    margin-bottom: 4rem;
-}
-#about{
-    position: relative;
-    width: 74%;
-    margin-left: 14rem;
-}
-.contantOfAbout{
-    position:relative;
-    margin-top: -185px;
-}
-    
-.aboutContant{
-    width: 40%;
-    height: 100%;    
-    position: relative;
-    left: 36rem;
-    bottom: -11rem;
-}
-.aboutAdv{
-    margin-top: -17px;
-    width: 40%;
-    height: 100%;
-}
-.txtForm{
-    color: white !important;
-}
-.contactDiv{
-    position: relative;
-    width: 50%;
-    height: 100%;
-    margin-left: 22rem;
-    background-color: white !important;
-    color: black !important;
-    font-weight: bold !important;
-}
-footer {
-    background-color: #000000;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    position: fixed;
-    width: calc(100% + 84px);
-    /* Adjusted to account for negative margins */
-    bottom: 0;
-    margin-left: -42px;
-    height: 42px;
-}
-.contactDiv input{
-    background-color: rgba(97, 97, 239, 0.749);
-}
-
-
-
-.hidden {
-    opacity: 0.6;
-    transition: opacity 1s ease-out;
-}
-
-.visible {
-    opacity: 1;
-    transition: opacity 1s ease-out;
-}
-
-
-@keyframes upDown {
-
-    50% {
-        top: 20px;
-    }
-
-    100% {
-        top: 0;
-    }
-}
-
-@keyframes downToUp {
-    0% {
-        transform: translateY(100%); /* Start below the initial position */
-        opacity: 0;                 /* Start invisible */
-    }
-    50%{
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0);    /* End at its original position */
-        opacity: 1;                 /* End fully visible */
-    }
-}
-@keyframes downToUpHome{
-
-    0%{
-        transform: translateY(20%); 
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0);    /* End at its original position */
-        opacity: 1;                 /* End fully visible */
-    }
-}
-@keyframes upComing {
-   
-    0% { transform: translateY(5%); }
-    50% { transform: translateY(0); }
-    100% { transform: translateY(5%); }
-}
-
-@media (max-width: 768px) {
-    .carousel-image {
-        max-height: 300px; /* Smaller height for smaller screens */
-    }
-}
-
-@media (min-width: 769px) {
-    .carousel-image {
-        max-height: 500px; /* Larger height for larger screens */
-    }
-}
-
-
-
-.animate {
-    opacity: 0;
-    transition: opacity 1s ease-out;
-}
-.animate.active {
-    opacity: 1;
+    margin-left: 0rem;
 }

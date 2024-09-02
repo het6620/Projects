@@ -1,22 +1,30 @@
+
+:root {
+    --main-bg-color: #000000;
+    --main-text-color: #ffffff;
+    --accent-color: #007bff;
+    --form-bg-color: #d1dfe9;
+    --card-hover-bg: #b7d0ed;
+    --header-height: 60px;
+}
+
 body,
 html {
     margin: 0;
     padding: 0;
-    overflow: visible;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-text-color) !important;
     padding: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;    
-    overflow: auto;
+    position: relative;
+    overflow-y: auto;
 }
 
 body::before {
@@ -34,60 +42,30 @@ body::before {
     z-index: -1;
 }
 
-/* header {
-    position: sticky !important;
-    top: -32px;
-    left: -22px;
-    background-color: #007bff;
-    padding: 1rem 0;
-    width: calc(100% + 66px);
-    margin-left: -30px;
-    margin-top: -40px;
-    height: calc(100% + 66px);
-    z-index: 1000;
-
-   
-    
-   
-} */
-/* header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: #007bff;
-    padding: 1rem 0;
-    width: 100%;
-    z-index: 1000;
-} */
-
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #007bff; /* Blue color */
+    background-color: var(--accent-color);
     padding: 1rem 0;
     width: 100%;
     z-index: 1000;
-    height: auto; /* Ensure there's space */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds shadow to highlight */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
-    color: #fff;
+    color: var(--main-text-color);
     text-decoration: none;
     font-weight: bold;
-    height: 27px;
     position: relative;
-    /* Ensure positioning of nested elements */
 }
 
 nav i img {
-    height: 59px;
-    width: 64px;
+    height: 56px;
+    width: 63px;
     position: absolute;
     margin-top: -16px;
     margin-left: -8px;
-
 }
 
 nav span {
@@ -102,8 +80,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: end;
-
+    justify-content: flex-end;
 }
 
 nav ul li {
@@ -111,7 +88,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: var(--main-text-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -121,24 +98,21 @@ nav ul li a:hover {
 }
 
 .navButton {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    color: var(--main-text-color);
     text-decoration: underline;
+    font-weight: bold;
 }
 
 main {
     position: relative;
-    /* Ensure positioning relative to pseudo-element */
 }
-
-
 
 .carousel-item {
     transition: transform 3s ease-in-out;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     top: 50% !important;
     transform: translateY(-50%) !important;
 }
@@ -150,11 +124,13 @@ main {
 .carousel-control-prev {
     left: -97px !important;
 }
+
 #carouselExample {
     position: relative;
     margin-top: -33rem;
 }
-#imgGraphics{
+
+#imgGraphics {
     height: 30rem;
     width: 30rem;
     position: relative;
@@ -162,18 +138,13 @@ main {
     display: block;
     left: 35rem;
     bottom: 20rem;
-    margin: 0 auto; /* Center horizontally */
-    /* animation: lightPulse 3s    ease-in-out infinite; */
+    margin: 0 auto;
     animation: upComing 2.5s ease infinite;
-
 }
 
 main div {
     margin-top: 45px;
-    /* margin-left: 12px; */
-    /* display: flex; */
     position: relative;
-
 }
 
 .cardContainer {
@@ -189,7 +160,7 @@ main div {
 }
 
 .card:hover {
-    background-color: #b7d0ed;
+    background-color: var(--card-hover-bg);
 }
 
 .card-body {
@@ -210,58 +181,57 @@ main div {
 section {
     margin-bottom: 4rem;
 }
-#about{
+
+#about {
     position: relative;
     width: 74%;
     margin-left: 14rem;
 }
-.contantOfAbout{
-    position:relative;
+
+.contantOfAbout {
+    position: relative;
     margin-top: -185px;
 }
-    
-.aboutContant{
+
+.aboutContant {
     width: 40%;
-    height: 100%;    
     position: relative;
     left: 36rem;
     bottom: -11rem;
 }
-.aboutAdv{
+
+.aboutAdv {
     margin-top: -17px;
     width: 40%;
-    height: 100%;
 }
-.txtForm{
-    color: white !important;
+
+.txtForm {
+    color: var(--main-text-color) !important;
 }
-.formClass{
+
+.formClass {
     position: relative;
     width: 50%;
-    height: 100%;
     margin-left: 22rem;
-    background-color: #d1dfe9 !important;
+    background-color: var(--form-bg-color) !important;
     color: black !important;
     font-weight: bold !important;
     border-radius: 5px;
     padding: 1px 25px;
     padding-bottom: 15px;
 }
+
 footer {
-    background-color: #000000;
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     padding: 1rem;
     text-align: center;
     position: fixed;
     width: calc(100% + 84px);
-    /* Adjusted to account for negative margins */
     bottom: 0;
     margin-left: -42px;
-    height: 42px;
+    height: var(--header-height);
 }
-
-
-
 
 .hidden {
     opacity: 0.6;
@@ -273,13 +243,10 @@ footer {
     transition: opacity 1s ease-out;
 }
 
-
 @keyframes upDown {
-
     50% {
         top: 20px;
     }
-
     100% {
         top: 0;
     }
@@ -287,53 +254,172 @@ footer {
 
 @keyframes downToUp {
     0% {
-        transform: translateY(100%); /* Start below the initial position */
-        opacity: 0;                 /* Start invisible */
+        transform: translateY(100%);
+        opacity: 0;
     }
-    50%{
+    50% {
         opacity: 1;
     }
     100% {
-        transform: translateY(0);    /* End at its original position */
-        opacity: 1;                 /* End fully visible */
+        transform: translateY(0);
+        opacity: 1;
     }
 }
-@keyframes downToUpHome{
 
-    0%{
-        transform: translateY(20%); 
+@keyframes downToUpHome {
+    0% {
+        transform: translateY(20%);
         opacity: 1;
     }
     100% {
-        transform: translateY(0);    /* End at its original position */
-        opacity: 1;                 /* End fully visible */
+        transform: translateY(0);
+        opacity: 1;
     }
 }
+
 @keyframes upComing {
-   
-    0% { transform: translateY(5%); }
-    50% { transform: translateY(0); }
-    100% { transform: translateY(5%); }
+    0% {
+        transform: translateY(5%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5%);
+    }
 }
 
 @media (max-width: 768px) {
+
+    nav i img {
+        height: 52px;
+        width: 63px;
+        position: absolute;
+        margin-top: -16px;
+        margin-left: -6px;
+    }
     .carousel-image {
-        max-height: 300px; /* Smaller height for smaller screens */
+        max-height: 300px;
+    }
+    
+    .aboutContant,
+    .formClass {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+    nav span {
+        margin-left: 59px;
+        position: absolute;
+        margin-top: -2px;
+        font-size: large;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        font-size: smaller;
+    }
+
+    nav ul li {
+        margin: 0 2px;
+    }
+    #imgGraphics {
+        height: 11rem;
+        width: 11rem;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        left: 8rem;
+        bottom: 19rem;
+        margin: 0 auto;
+        animation: upComing 2.5s ease infinite;
+    }
+
+    .animate.active {
+        opacity: 1;
+        width: 13rem;
+    }
+    #carouselExample {
+        position: relative;
+        margin-top: -16rem;
+    }
+    .card {
+        --bs-card-spacer-y: 1rem;
+        --bs-card-spacer-x: 1rem;
+        --bs-card-title-spacer-y: 0.5rem;
+        --bs-card-title-color: ;
+        --bs-card-subtitle-color: ;
+        --bs-card-border-width: var(--bs-border-width);
+        --bs-card-border-color: var(--bs-border-color-translucent);
+        --bs-card-border-radius: var(--bs-border-radius);
+        --bs-card-box-shadow: ;
+        --bs-card-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+        --bs-card-cap-padding-y: 0.5rem;
+        --bs-card-cap-padding-x: 1rem;
+        --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+        --bs-card-cap-color: ;
+        --bs-card-height: ;
+        --bs-card-color: ;
+        --bs-card-bg: var(--bs-body-bg);
+        --bs-card-img-overlay-padding: 1rem;
+        --bs-card-group-margin: 0.75rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        height: var(--bs-card-height);
+        color: var(--bs-body-color);
+        word-wrap: break-word;
+        background-color: var(--bs-card-bg);
+        background-clip: border-box;
+        border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+        border-radius: var(--bs-card-border-radius);
+        margin-bottom: 13px;
+    }
+    .cardContainer{
+        flex-direction: column;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .aboutContant {
+        flex-direction: column;
+        width: 64%;
+        margin-left: -27rem;
+    }
+    .aboutAdv {
+        margin-top: -104px;
+        width: 40%;
+    }
+    #about {
+        position: relative;
+        width: 100%;
+        margin-left: 0rem;
+        font-size: smaller;
+    }
+    #contact {
+        margin-left: 1rem;
+        width: 100%;
     }
 }
 
 @media (min-width: 769px) {
     .carousel-image {
-        max-height: 500px; /* Larger height for larger screens */
+        max-height: 500px;
     }
+    
 }
-
 
 
 .animate {
     opacity: 0;
     transition: opacity 1s ease-out;
 }
+
 .animate.active {
     opacity: 1;
 }
