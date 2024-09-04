@@ -396,7 +396,7 @@ footer {
     .aboutContant {
         flex-direction: column;
         width: 64%;
-        margin-left: -130%;
+        margin-left: -150%;
     }
     .aboutAdv {
         margin-top: 7%;
@@ -406,6 +406,7 @@ footer {
         position: relative;
         width: 100%;
         margin-left: 0rem;
+        padding: 1rem;
         font-size: x-small;
     }
     .formClass {
