@@ -322,19 +322,21 @@ footer {
         margin: 0;
         display: flex;
         justify-content: flex-end;
-        font-size: smaller;
+        font-size: x-small;        /* padding-left: 0px !important; */
+        margin-right: 12px !important;
     }
 
     nav ul li {
         margin: 0 2px;
+        margin-left: 10px !important;
     }
     #imgGraphics {
         height: 11rem;
         width: 11rem;
         position: relative;
         overflow: hidden;
-        display: block;
-        left: 8rem;
+        display: block;        
+        left: 10rem;
         bottom: 19rem;
         margin: 0 auto;
         animation: upComing 2.5s ease infinite;
@@ -347,6 +349,7 @@ footer {
     #carouselExample {
         position: relative;
         margin-top: -16rem;
+        width: 200% !important;
     }
     .card {
         --bs-card-spacer-y: 1rem;
@@ -429,6 +432,10 @@ footer {
             margin-bottom: 1rem;
             font-size: x-small;
         
+    }
+    #message{
+        width: 11rem !important;
+        height: 5rem !important;
     }
 }
 
