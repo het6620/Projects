@@ -1,4 +1,318 @@
-/* Iphone SE 
+:root {
+    --main-bg-color: #000000;
+    --main-text-color: #ffffff;
+    --accent-color: #007bff;
+    --form-bg-color: #d1dfe9;
+    --card-hover-bg: #b7d0ed;
+    --header-height: 60px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color) !important;
+    color: var(--main-text-color) !important;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow-y: auto;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpaperaccess.com/full/624111.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav i img {
+    height: 56px;
+    width: 63px;
+    position: absolute;
+    margin-top: -16px;
+    margin-left: -8px;
+}
+
+nav span {
+    margin-left: 59px;
+    position: absolute;
+    margin-top: -2px;
+    font-size: x-large;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navButton {
+    color: var(--main-text-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main {
+    position: relative;
+}
+
+.carousel-item {
+    transition: transform 3s ease-in-out;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.carousel-control-next {
+    right: 38rem !important;
+}
+
+.carousel-control-prev {
+    left: -97px !important;
+}
+
+#carouselExample {
+    position: relative;
+    margin-top: -33rem;
+}
+
+#imgGraphics {
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    left: 35rem;
+    bottom: 20rem;
+    margin: 0 auto;
+    animation: upComing 2.5s ease infinite;
+}
+
+main div {
+    margin-top: 45px;
+    position: relative;
+}
+
+.cardContainer {
+    display: flex;
+    margin-top: -12px;
+    padding: 12px;
+    margin-left: -20px;
+    width: 96%;
+}
+
+.card {
+    margin: 0 10px;
+}
+
+.card:hover {
+    background-color: var(--card-hover-bg);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    margin: -7px;
+}
+
+.card-img,
+.card-img-top {
+    width: 255px;
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    height: 135px;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+#about {
+    position: relative;
+    width: 74%;
+    margin-left: 14rem;
+}
+
+.contantOfAbout {
+    position: relative;
+    margin-top: -185px;
+}
+
+.aboutContant {
+    width: 40%;
+    position: relative;
+    left: 36rem;
+    bottom: -11rem;
+}
+
+.aboutAdv {
+    margin-top: -17px;
+    width: 40%;
+}
+
+.txtForm {
+    color: var(--main-text-color) !important;
+}
+
+.formClass {
+    position: relative;
+    width: 50%;
+    margin-left: 22rem;
+    background-color: var(--form-bg-color) !important;
+    color: black !important;
+    font-weight: bold !important;
+    border-radius: 5px;
+    padding: 1px 25px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: calc(100% + 84px);
+    bottom: 0;
+    margin-left: -42px;
+    height: var(--header-height);
+}
+
+.hidden {
+    opacity: 0.6;
+    transition: opacity 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+@keyframes upDown {
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes downToUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes downToUpHome {
+    0% {
+        transform: translateY(20%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes upComing {
+    0% {
+        transform: translateY(5%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(5%);
+    }
+}
+
+@media (max-width: 768px) {
+    .w-50 {
+        width: 100% !important;
+    }
+
+    nav i img {
+        height: 340%;
+        width: 14%;
+        position: absolute;
+        margin-top: -5%;
+        margin-left: -1%;
+    }
+
+    .carousel-image {
+        max-height: 300px;
+    }
+
+
     nav span {
         margin-left: 59px;
         position: absolute;
@@ -12,19 +326,23 @@
         margin: 0;
         display: flex;
         justify-content: flex-end;
-        font-size: smaller;
+        font-size: x-small;
+        /* padding-left: 0px !important; */
+        margin-right: 12px !important;
     }
 
     nav ul li {
         margin: 0 2px;
+        margin-left: 10px !important;
     }
+
     #imgGraphics {
         height: 11rem;
         width: 11rem;
         position: relative;
         overflow: hidden;
         display: block;
-        left: 8rem;
+        left: 10rem;
         bottom: 19rem;
         margin: 0 auto;
         animation: upComing 2.5s ease infinite;
@@ -34,49 +352,232 @@
         opacity: 1;
         width: 13rem;
     }
+
     #carouselExample {
         position: relative;
         margin-top: -16rem;
-    } 
+        width: 200% !important;
+    }
 
     .card {
-    --bs-card-spacer-y: 1rem;
-    --bs-card-spacer-x: 1rem;
-    --bs-card-title-spacer-y: 0.5rem;
-    --bs-card-title-color: ;
-    --bs-card-subtitle-color: ;
-    --bs-card-border-width: var(--bs-border-width);
-    --bs-card-border-color: var(--bs-border-color-translucent);
-    --bs-card-border-radius: var(--bs-border-radius);
-    --bs-card-box-shadow: ;
-    --bs-card-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
-    --bs-card-cap-padding-y: 0.5rem;
-    --bs-card-cap-padding-x: 1rem;
-    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
-    --bs-card-cap-color: ;
-    --bs-card-height: ;
-    --bs-card-color: ;
-    --bs-card-bg: var(--bs-body-bg);
-    --bs-card-img-overlay-padding: 1rem;
-    --bs-card-group-margin: 0.75rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    height: var(--bs-card-height);
-    color: var(--bs-body-color);
-    word-wrap: break-word;
-    background-color: var(--bs-card-bg);
-    background-clip: border-box;
-    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-    border-radius: var(--bs-card-border-radius);
-    margin-bottom: 13px;
+        --bs-card-spacer-y: 1rem;
+        --bs-card-spacer-x: 1rem;
+        --bs-card-title-spacer-y: 0.5rem;
+        --bs-card-title-color: ;
+        --bs-card-subtitle-color: ;
+        --bs-card-border-width: var(--bs-border-width);
+        --bs-card-border-color: var(--bs-border-color-translucent);
+        --bs-card-border-radius: var(--bs-border-radius);
+        --bs-card-box-shadow: ;
+        --bs-card-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+        --bs-card-cap-padding-y: 0.5rem;
+        --bs-card-cap-padding-x: 1rem;
+        --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+        --bs-card-cap-color: ;
+        --bs-card-height: ;
+        --bs-card-color: ;
+        --bs-card-bg: var(--bs-body-bg);
+        --bs-card-img-overlay-padding: 1rem;
+        --bs-card-group-margin: 0.75rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        height: var(--bs-card-height);
+        color: var(--bs-body-color);
+        word-wrap: break-word;
+        background-color: var(--bs-card-bg);
+        background-clip: border-box;
+        border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+        border-radius: var(--bs-card-border-radius);
+        margin-bottom: 13px;
+        margin-bottom: 17px;
+        max-width: 15rem;
+        max-height: 45rem;
+        font-size: small;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .aboutContant {
+        flex-direction: column !important;
+        width: 65%;
+        margin-left: -161%;
+        display: flex;
+    }
+
+    .aboutAdv {
+        margin-top: 7%;
+        width: 40%;
+    }
+
+    #about {
+        position: relative;
+        width: 100%;
+        margin-left: 0rem;
+        padding: 1rem;
+        font-size: x-small;
+    }
+
+    .formClass {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .formClass label {
+        width: 70% !important;
+        font-size: small;
+    }
+
+    #contact {
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .form-control {
+        width: 65% !important;
+        margin-top: -14%;
+        margin-left: 36%;
+    }
+
+    .mb-3 {
+        margin-bottom: -2rem !important;
+    }
+
+    footer p {
+
+        margin-right: 12%;
+        margin-bottom: 10%;
+        font-size: 60%;
+
+    }
+
+    #message {
+        width: 65% !important;
+        height: 30% !important;
+    }
 }
 
-#about {
-    position: relative;
-    width: 100%;
-    margin-left: 0rem;
-} */
+
+@media (min-width: 769px) {
+    .carousel-image {
+        max-height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 1080px) and (max-height: 2340px) {
+
+    body{
+        font-size: x-large !important;
+    }
+    #homeB{       
+        width: 60%;
+        display: block;
+    }
+    #imgGraphics {
+        left: 22rem;
+    }
+
+    .cardContainer {
+        flex-direction: row;
+        /* Make the cards display horizontally */
+        flex-wrap: wrap;
+        /* Allow the cards to wrap to the next line if there's not enough space */
+        width: 100%;
+        justify-content: space-between;
+        /* Adjust spacing between cards */
+        margin: 0;
+        /* Remove any default margin */
+        padding: 0;
+        /* Remove any default padding */
+    }
+
+    .card {
+        width: calc(33% - 20px) !important;
+        /* Adjust width to fit 3 cards per row with space in between */
+        margin-bottom: 20px;
+        /* Space below each card */
+        margin-left: 21rem;
+    }
+
+    /* Ensure card images are responsive */
+    .card-img-top {
+        width: 100%;
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .aboutContant {
+        flex-direction: column !important;
+        width: 50%;
+        margin-left: -4rem;
+        display: flex;
+    }
+
+    .aboutAdv {
+        margin-top: 7%;
+        width: 40%;
+    }
+
+    #about {
+        position: relative;
+        width: 100%;
+        margin-left: 0rem;
+        padding: 1rem;
+        font-size: x-small;
+    }
+
+    .formClass {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .formClass label {
+        width: 70% !important;
+        font-size: small;
+    }
+
+    #contact {
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .form-control {
+        width: 65% !important;
+        margin-top: -6%;
+        margin-left: 36%;
+    }
+
+    .mb-3 {
+        margin-bottom: -2rem !important;
+    }
+
+    footer p {
+        margin-right: 12%;
+        margin-bottom: 10%;
+        font-size: 60%;
+    }
+
+    #message {
+        width: 65% !important;
+        height: 30% !important;
+    }
+}
 
 
+
+.animate {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.animate.active {
+    opacity: 1;
+}

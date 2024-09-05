@@ -304,7 +304,7 @@ footer {
         height: 340%;
         width: 14%;
         position: absolute;
-        margin-top: -5%;
+        margin-top: -5% !important;
         margin-left: -1%;
     }
 
@@ -336,13 +336,16 @@ footer {
         margin-left: 10px !important;
     }
 
+    #homeB , #homeP{
+        font-size: small !important;
+    }
     #imgGraphics {
         height: 11rem;
         width: 11rem;
         position: relative;
         overflow: hidden;
         display: block;
-        left: 10rem;
+        left: 10rem !important;
         bottom: 19rem;
         margin: 0 auto;
         animation: upComing 2.5s ease infinite;
@@ -354,11 +357,15 @@ footer {
     }
 
     #carouselExample {
-        position: relative;
-        margin-top: -16rem;
-        width: 200% !important;
+        position: relative;      
+        margin-top: -14rem;
+        width: 270% !important;
+
     }
 
+    #servicesP{
+        font-size: 85% !important;
+    }
     .card {
         --bs-card-spacer-y: 1rem;
         --bs-card-spacer-x: 1rem;
@@ -398,35 +405,39 @@ footer {
     }
 
     .cardContainer {
-        flex-direction: column;
-        width: 80%;
-        margin-left: 0;
+        flex-direction: column !important;
+        width: 379% !important;
+        margin-left: 0 !important;
+        left: -136% !important;
     }
 
     .aboutContant {
         flex-direction: column !important;
-        width: 65%;
-        margin-left: -161%;
+        width: 65% !important;
+        margin-left: -130% !important;
         display: flex;
+        font-size: small !important;
     }
 
     .aboutAdv {
-        margin-top: 7%;
-        width: 40%;
+        margin-top: -55% !important;
+        width: 40% !important;
+        font-size: 60% !important;
     }
 
     #about {
         position: relative;
         width: 100%;
         margin-left: 0rem;
-        padding: 1rem;
-        font-size: x-small;
+        padding: 1rem;        
+        font-size: 90% !important;
     }
 
     .formClass {
-        flex-direction: column;
-        width: 90%;
-        margin-left: 0;
+        display: flex;
+        flex-direction: column !important;
+        width: 100% !important;
+        margin-left: -68% !important;   
     }
 
     .formClass label {
@@ -435,13 +446,14 @@ footer {
     }
 
     #contact {
-        margin-left: 5%;
-        width: 100%;
+        margin-left: 5% !important;
+        margin-top: 40% !important;
+        width: 100% !important;
     }
 
     .form-control {
         width: 65% !important;
-        margin-top: -14%;
+        margin-top: -14% !important;
         margin-left: 36%;
     }
 
@@ -471,19 +483,57 @@ footer {
 
 }
 
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    
+}
+@media only screen and (max-width: 2340px) and (max-height: 1080px) {
+    .aboutContant{
+        top: 10rem;
+        left: 60rem;
+    }
+    .aboutAdv{
+        top: 4rem;
+    }
+    .formClass{
+        left: 14rem;
+    }
+}
 @media only screen and (max-width: 1080px) and (max-height: 2340px) {
 
     body{
         font-size: x-large !important;
     }
+
+    nav i img {
+        margin-top:-7px;
+    }
     #homeB{       
         width: 60%;
         display: block;
+        font-size: xxx-large;
     }
-    #imgGraphics {
+    #homeP{
+        font-size: xxx-large;
+        width: 48rem !important;
+    }
+    /* #imgGraphics {
         left: 22rem;
-    }
+        top: -44rem;
+    } */#imgGraphics {
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    overflow: hidden;
+    display: block;    
+    left: 30%;
+    bottom: 50rem !important;
+    margin: 0 auto;
+    animation: upComing 2.5s ease infinite;
+}
 
+    #servicesP{
+        font-size: xxx-large;
+    }
     .cardContainer {
         flex-direction: row;
         /* Make the cards display horizontally */
@@ -514,15 +564,17 @@ footer {
     }
 
     .aboutContant {
-        flex-direction: column !important;
-        width: 50%;
-        margin-left: -4rem;
-        display: flex;
+        width: 40%;
+        position: relative;
+        left: 36rem;
+        bottom: -11rem;
+        font-size: x-large;
     }
 
     .aboutAdv {
-        margin-top: 7%;
+        margin-top: -30%;
         width: 40%;
+        font-size: x-large;
     }
 
     #about {
@@ -530,7 +582,7 @@ footer {
         width: 100%;
         margin-left: 0rem;
         padding: 1rem;
-        font-size: x-small;
+        font-size: small;
     }
 
     .formClass {
