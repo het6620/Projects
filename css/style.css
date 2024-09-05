@@ -413,9 +413,9 @@ footer {
 
     .aboutContant {
         flex-direction: column !important;
-        width: 65% !important;
-        margin-left: -130% !important;
         display: flex;
+        width: 65% !important;        
+        margin-left: -150% !important;
         font-size: small !important;
     }
 
@@ -437,7 +437,7 @@ footer {
         display: flex;
         flex-direction: column !important;
         width: 100% !important;
-        margin-left: -68% !important;   
+        margin-left: -70% !important;   
     }
 
     .formClass label {
@@ -519,17 +519,7 @@ footer {
     /* #imgGraphics {
         left: 22rem;
         top: -44rem;
-    } */#imgGraphics {
-    height: 30rem;
-    width: 30rem;
-    position: relative;
-    overflow: hidden;
-    display: block;    
-    left: 30%;
-    bottom: 50rem !important;
-    margin: 0 auto;
-    animation: upComing 2.5s ease infinite;
-}
+    } */
 
     #servicesP{
         font-size: xxx-large;

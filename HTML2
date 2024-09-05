@@ -132,34 +132,35 @@
         <u>
           <h2 style="font-weight: bold;">About Us</h2>
         </u>
-        <p style="font-weight: bold;">Learn more about our hospital and our mission to provide excellent healthcare.</p></center>
-        <div class="contantOfAbout">
-          <div class="aboutContant">
+        <p style="font-weight: bold;">Learn more about our hospital and our mission to provide excellent healthcare.</p>
+        <div class="contantOfAbout"></center>
+        <div class="aboutContant">
           <span>"MedEasy" is modern Hospital Managment system
             which eliminates all the manual paper Records in
             Hospital Managmnet.
             The System offers modern facilities to patients so they
             can book an appointment without any kind of hassels
-            and upgrade their overall experience. 
+            and upgrade their overall experience. <br>
             Automation: Tasks such as appointment scheduling,
             billing, and inventory management are automated,
             reducing paperwork and administrative burdens.
-            </span>
-          </div>
-          <div class="aboutAdv">
-           <span>Electronic Health Records (EHR): Centralized digital
+          </span>
+        </div>
+        <div class="aboutAdv">
+          <span>Electronic Health Records (EHR): Centralized digital
             records allow healthcare providers instant access to
             patient information, including medical history, allergies,
-            medications, and lab results. 
+            medications, and lab results. <br>
             Integration: Seamless integration of all departments
             facilitates aligned workflows across various functions such
             as patient admissions, pharmacy etc. which ensures that
             tasks are performed efficiently, with minimal duplication
-            of effort or resources. 
+            of effort or resources. <br>
             Easy Billing : Automatically calculated Bills and online
             payment options minimizes billing errors.
-            </span>
-          </div>
+
+          </span>
+        </div>
       </div>
     </section>
 
